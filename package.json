@@ -1,0 +1,9 @@
+{
+  "name": "antigravity-project-init",
+  "version": "1.0.0",
+  "description": "Project tracked by OpenSpec",
+  "scripts": {
+    "dev:start": "bash ./scripts/startup.sh",
+    "dev:ending": "bash ./scripts/ending.sh"
+  }
+}
