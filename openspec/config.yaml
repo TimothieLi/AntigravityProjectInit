@@ -1,0 +1,30 @@
+schema: spec-driven
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+rules:
+  changelog:
+    - "Every time a NEW change set is created, numbering MUST restart from '01'."
+    - "Do NOT continue numbering from previous change sets."
+    - "Each change within the same set increments sequentially: 01, 02, 03..."
+    - "Always use two-digit format (e.g., 01, 02, ..., 10, 11)."
+    - "Never skip numbers or reuse numbers within the same change set."
+    - "If a new change set is initiated, reset numbering back to '01' again."
+    - "Output format must be: - [01] <change description>"
